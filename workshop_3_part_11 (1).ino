@@ -19,6 +19,7 @@ Serial.println("Enter angle (0-180 degrees) for position servo: ");
 Serial.println("OR enter speed (-100 to 100) for continuous rotation servo: ");
 }
 
+//this is the position servo code
 void posServo(){
 if (Serial.available()) {
 int angle = Serial.parseInt();
@@ -32,6 +33,7 @@ Serial.println("Invalid angle. Enter a value between 0 and 180.");
 }
 }
 
+//this is the rotational servo code
 void rotServo() {
 if (Serial.available()) {
 int speedPercent = Serial.parseInt();
