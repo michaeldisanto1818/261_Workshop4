@@ -1,11 +1,12 @@
 #include <Servo.h>
 
-
+//these are the two servos
 Servo myservo1;
 Servo myservo2;
 
 int currentSpeedPercent = 0;
 
+//this is the setup code
 void setup() {
 
 Serial.begin(9600);
